@@ -250,26 +250,23 @@ legend,
 }
 
 /*공통레이아웃*/
-
 .container {
-  /* display: flex;
-  flex-flow: row wrap; */
-  display: grid;
+  display: flex;
+  flex-flow: row wrap;
 }
-
 
 .appFooter {
   width: 100%;
 }
 
 
-
+/* 공통 헤더 */
 .appHeader {
   display: grid;
 
 }
 
-
+/* 공통 멤버 링크 */
 .memberOnly {  
   display: flex;
   flex-flow: row nowrap;
@@ -287,18 +284,18 @@ input[type="search"]{
   height: 35px;
 }
 
-/*모바일 내비게이션*/
+/*공통 내비게이션*/
 
-.appNavigation {
+/* .appNavigation {
   background-color: purple;
-}
+} */
 
-/* 모바일 메인 콘텐츠 */
+/* 공통 메인 콘텐츠 */
 .appMain {
   background-color: lime;
 }
 
-/* 모바일 푸터 */
+/* 공통 푸터 */
 
 .appFooter {
   background-color: orange;
