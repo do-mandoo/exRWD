@@ -265,20 +265,27 @@ legend,
 
 
 .appHeader {
-  background-color: rgb(185, 174, 174);
   display: grid;
 
 }
 
 
-.memberOnly {
-  
+.memberOnly {  
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-
+}
+.memberOnly .divider{
+  margin: 0 5px;
 }
 
+/* 공통 검색 폼 */
+input[type="search"]{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  height: 35px;
+}
 
 /*모바일 내비게이션*/
 

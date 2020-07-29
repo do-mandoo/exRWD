@@ -1,7 +1,6 @@
 /*데스크탑 기본 글자 크기*/
 body {
   font-size: 1.4rem;
-  background-color: yellow;
 }
 
 /*데스크탑레이아웃*/
@@ -36,15 +35,25 @@ body {
 .memberOnly {
   grid-area: 1/2/2/3;
 }
-/* 데스크탑 검색 폼 */
+
 
 /*데스크탑 검색 폼*/
 .searchForm {
-  text-align: right;
-  background-color: lime;
   grid-area: 2/2/3/3;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
 }
-
+.searchForm fieldset{
+  display:contents;
+}
+.buttonSearch{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 10px;
+  background-color: #988574;
+  color: #fff;
+}
 
 .appNavigation{
   width: 100%;
