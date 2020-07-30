@@ -312,6 +312,11 @@ legend,
   padding: 0;
   background: transparent;
 }
+/* 공통 반응형 콘텐츠 */
+.responsive{
+  max-width: 100%;
+  height: auto;
+}
 
 /*공통레이아웃*/
 .container {
@@ -356,7 +361,111 @@ input[type="search"]{
 
 /* 공통 메인 콘텐츠 */
 .appMain {
-  background-color: lime;
+}
+
+/* 공통 메인 콘텐츠  */
+
+/* 내가 짠 코드
+.appMain>section{
+  position: relative;
+}
+.sprite{
+  position: absolute;
+  font-size: 1.7rem;
+  background-image: url(./images/sprite_main.png);
+  background-repeat: no-repeat;
+  padding-left: 70px;
+  height: 59px;
+  overflow: hidden;
+}
+.sprite span{
+  display: block;
+  font-size: 1.6rem;
+} */
+
+/* 공통 메인 콘텐츠 섹션 제목, 단락 */
+.appMain [class*="__title"]{
+  margin: 0;
+  font-size: 1.6rem;
+}
+.appMain [class*="__enTitle"]{
+  display: block;
+  /* margin-top: 5px; */
+  line-height: 30px;
+}
+.sprite{
+  min-height: 60px;
+  padding-left: 65px;
+  background-image: url(./images/sprite_main.png);
+  background-repeat: no-repeat;
+}
+.spriteBook{
+  background-position: 0 0;
+}
+.spriteNews{
+  background-position: 0 -230px;
+}
+.spriteBoard{
+  background-position: 0 -115px;
+}
+.spriteFavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
+.themeGreen {
+  color: #abd375;
+}
+.themeYellow {
+  color: #e8ca58;
+}
+.themeBrown {
+  color: #c7b39a;
+}
+.themeSkyblue {
+  color: #6aaee6;
+}
+.themeOrange {
+  color: #eea60a;
+}
+.book__cover{
+  background-color: 
+}
+
+.appMain[class*="__summary"]{
+  line-height: 1.5;
+}
+
+/* 공통 추천 서적 */
+.book{
+
+}
+.book__cover{
+  margin: 15px 20px;
+  text-align: center;
+}
+.book__cover figcaption{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.book__info{
+  margin: 15px 0;
+  text-align: center;
+}
+.book__info *{
+  display: inline-block;
+}
+.book__info dt{
+
+}
+.book__info dd{
+  margin-left: 0;
+}
+.book__info dd[aria-label]{
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 /* 공통 푸터 */

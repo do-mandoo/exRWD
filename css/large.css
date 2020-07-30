@@ -93,39 +93,74 @@ body {
 /* 데스크탑 메인 콘텐츠 */
 .appMain{
   display: grid;
-  grid-template: repeat(2, 25vh)/ repeat(12, 1fr);
+  grid-template: auto/ repeat(12, 1fr);
   grid-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* grid-column-gap: 20px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2,1fr); */
 }
 /* 데스크탑 추천 서적 */
 .book{
-  background-color: red;
   grid-area: 1/ 1/ 2/ span 4;
   /* grid-area: 1/ 1/ 2/ 5 */
 }
+.book__cover{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+/* 내가 짠 코드 
+.responsive{
+  max-width: 100%;
+}
+
+#book__coverCaption{
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.book__info{
+  border: 3px dashed;
+  text-align: center;
+}
+.book__info dt{
+  background-color: #fff;
+}
+.book__info dt, dd{
+  display: inline-block;
+  margin: 0;
+}
+.themeGreen{
+  display: block;
+  background-color: #aaa;
+}
+
+.book__summary{
+  border: 2px solid blue;
+  font-size: 1.4rem;
+} */
 /* 데스크탑 새소식 */
 .news{
-  background-color: blue;
   grid-area: 1/5/2/span 8;
   /* grid-area : 1/5/2/13*/
 }
 /* 데스크탑 게시판 */
 .board{
-  background-color: yellow;
+  /* background-color: yellow; */
   grid-area: 2/1/3/5;
   /* grid-area: 2/1/3/ span 4 */
 }
 /* 데스크탑 인기사이트 */
 .favorite{
-  background-color: white;
   grid-area: 2/10/3/13;
   /* grid-area: 2/10/3/span3 */
 }
 /* 데스크탑 트위터 */
 .twitter{
-  background-color: green;
   grid-area: 2/5/3/10;
   /* grid-area: 2/5/3/span5 */
 }

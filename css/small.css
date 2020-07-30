@@ -11,6 +11,7 @@ body {
   width: 100%;
 }
 
+
 /*모바일 헤더*/
 .appHeader {
   background-color: #38302e;
@@ -164,7 +165,7 @@ input[type="search"]{
   font-weight: 700;
   /* display: block; 제거 */
   margin-bottom: 20px;
-  /* 마진바텀이 10px일때 변화된게 안보이는 이유는 마진병합이 일어났기때문. 그럴땐 20px로 늘리거나, 패딩10px을 추가로 주면 된다. */
+  /* 플렉스가 동작 안하는 이유가 마진 바텀떄문. 마진바텀이 10px일때 변화된게 안보이는 이유는 마진병합이 일어났기때문. 그럴땐 20px로 늘리거나, 패딩10px을 추가로 주면 된다. */
   display: inline-block;
   width: calc(100% - 1.5em);
 }
@@ -187,14 +188,12 @@ input[type="search"]{
 
 /* 모바일 메인 콘텐츠 */
 .appMain {
-  background-color: lime;
   display: flex;
   flex-flow: row wrap;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .book, .news, .board, .favorite, .twitter{
   width: 100%;
-  height: 10vh;
 }
 
 
