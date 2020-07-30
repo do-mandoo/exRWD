@@ -71,6 +71,10 @@ input[type="search"]{
   
 
 /*모바일 내비게이션*/
+.isAct{
+
+}
+
 
 
 /* 모바일 메뉴 제어 버튼 */
@@ -107,6 +111,7 @@ input[type="search"]{
   top: 100%;
   transform: translateY(-100%);
 }
+/* 강사님 코드 */
 .isAct .positionTop{
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
@@ -120,7 +125,7 @@ input[type="search"]{
 }
 
 /* 내가 짠 코드
- .positionTop, .positionMiddle, .positionBottom{
+.positionTop, .positionMiddle, .positionBottom{
   top: 40%;
   transform: translate(-40%);
 }
@@ -140,9 +145,45 @@ input[type="search"]{
   left: 0;
   width: 70vw;
   height: 100vh;
-  transform: translateX(-100%);
+  transform: translateX(-105%);
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(3px);
+  padding:20px;
+}
+.isAct .menu__list {
+  transform: none;
+}
+.menu__item{
+  /* display: flex;
+  flex-flow: row wrap; */
 }
 
+.menu__link{
+  font-size: 1.7rem;
+  font-weight: 700;
+  /* display: block; 제거 */
+  margin-bottom: 20px;
+  /* 마진바텀이 10px일때 변화된게 안보이는 이유는 마진병합이 일어났기때문. 그럴땐 20px로 늘리거나, 패딩10px을 추가로 주면 된다. */
+  display: inline-block;
+  width: calc(100% - 1.5em);
+}
+.menu__subMenu{
+  width: 100%;
+  font-size: 1.6rem;
+  display: none;
+  
+}
+.menu__subMenu li{
+  margin: 10px 0;
+}
+.menu__subMenu a{
+  display: block;
+  padding: 5px 0;
+}
+.menuAct .menu__subMenu{
+  display: block;
+}
 
 /* 모바일 메인 콘텐츠 */
 .appMain {
