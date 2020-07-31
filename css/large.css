@@ -168,3 +168,8 @@ body {
   grid-area: 2/5/3/10;
   /* grid-area: 2/5/3/span5 */
 }
+
+/* 데스크탑 푸터 */
+.appFooter{
+  text-align: center;
+}

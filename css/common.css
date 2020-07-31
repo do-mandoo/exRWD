@@ -572,10 +572,75 @@ video.responsive{
   color: #fff;
   box-shadow: 2px 2px 0 0 #aaa;
 }
-
-
+/* 공통 트위터 */
+/* 내가 짠 코드
+.twitter{
+  display: grid;
+  grid-template: repeat(4, 60px)/ repeat(2,1fr);
+}
+.twitter__userInfo{
+  grid-area: 2/1/span 1 /2;
+}
+.twitter__userProfile{
+  grid-area: 2/2/span 3/2;
+  background-color:#eee;
+}
+.twitter__summary{
+  grid-area: 3/1/4/2;
+*/
+.twitter{
+  display: grid;
+  /* grid-template: auto/ repeat(20%, 1fr); */
+  grid-template-columns: 1fr 20%;
+  grid-column-gap: 20px;
+}
+.twitter__title{
+  grid-area: 1/1/2/3;
+}
+.twitter__userProfile{
+  grid-area: 2/2/4/3;
+  margin: 0;
+}
+.circlePhoto{
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+.twitter__userInfo{
+  display: flex;
+  margin-left: 20px;
+}
+.twitter__userName, .twitter__userId{
+  margin-left: 0;
+}
+.twitter__summary{
+  margin-left: 20px;
+}
+.twitter__date{
+  margin: 1em;
+  text-align: right;
+}
 
 /* 공통 푸터 */
 .appFooter {
-  background-color: orange;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  color: #fff;
+  padding: 2em 2em;
+}
+.address, .copyright{
+  margin: 1em 0;
+}
+.address{
+  font-style: normal;
+}
+.copyright{
+  font-size: 1em;
 }
