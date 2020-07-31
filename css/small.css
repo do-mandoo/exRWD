@@ -195,8 +195,10 @@ input[type="search"]{
 .book, .news, .board, .favorite, .twitter{
   width: 100%;
 }
-
-
+/* 모바일 인기 사이트 */
+.favorite__list a:hover::before, .favorite__list a:focus::before{
+  left: ;: 10em;
+}
 /* 모바일 푸터 */
 
 .appFooter {

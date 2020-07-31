@@ -11,9 +11,9 @@ body {
 }
 
 .appHeader, .appMain, .menu__list{
-  /* min-width: 1000px;
-  max-width: 1800px; */
-  width: 1000px;
+  min-width: 1000px;
+  max-width: 1800px;
+  width: 78.125%;
 }
 
 .appNavigation{
@@ -159,6 +159,10 @@ body {
   grid-area: 2/10/3/13;
   /* grid-area: 2/10/3/span3 */
 }
+.favorite__list a:hover::before, .favorite__list a:focus::before{
+  right: -10px;
+}
+
 /* 데스크탑 트위터 */
 .twitter{
   grid-area: 2/5/3/10;

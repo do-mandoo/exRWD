@@ -476,8 +476,6 @@ video.responsive{
 }
 .news_videoContainer{
   margin: 15px 20px;
-  max-width: 560px;
-  max-height: 315px;
 }
 .news__date{
   display: block;
@@ -505,6 +503,74 @@ video.responsive{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* 공통 게시판 */
+.board{
+  position: relative;
+  overflow: hidden;
+}
+.board__list{
+  margin: 15px 0;  
+}
+.board__list li{
+  margin: 10px 0;
+  padding-left: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.board__list a{
+  white-space: nowrap;
+  /* 그리드 컨테이너에 영향을 준다. */
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-grow: 1;
+  /* width: calc(100%-120px); */
+  margin:0 10px 0 5px;
+}
+.board__more{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 10px;
+}
+/* 공통 인기 사이트 */
+.favorite__list{
+  margin: 15px 0;
+  padding-left: 20px;
+}
+.favorite__list li{
+  counter-increment: number;
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.favorite__list li::before{
+  content: counter(number);
+  color: #fff;
+  background-color: #eea60a;
+  padding: 2px 6px;
+  margin-right: 5px;
+  border-radius: 50%;
+  /* display: inline-block;
+  li 가 플렉스가 되서 안써도 됨. */
+  font-size: 1.6rem;
+}
+.favorite__list a{
+  position: relative;
+  flex-grow: 1;
+}
+.favorite__list a:hover::before, .favorite__list a:focus::before{
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 1em;
+  background-color: #eea60a;
+  border: 1px solid: #aaa ;
+  padding: 5px;
+  z-index: 100;
+  color: #fff;
+  box-shadow: 2px 2px 0 0 #aaa;
 }
 
 
